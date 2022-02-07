@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.index');
 });
+
+Route::get('/data-latih', function () {
+    return view('welcome');
+})->name('data-latih');
